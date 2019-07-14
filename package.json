@@ -1,0 +1,21 @@
+{
+  "name": "jest-enzyme-practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/blake-practice-repos/jest-enzyme-practice.git",
+  "author": "blake-swl <seulwoolee93@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.5.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
