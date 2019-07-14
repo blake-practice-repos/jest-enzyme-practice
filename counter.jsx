@@ -5,18 +5,13 @@ export default class Counter extends Component {
     count: 0,
   }
 
-  increment = () => 
-  this.setState(prevState => {
-    return {
-      count: prevState.count + 1,
-    }
-  })
-  decrement = () => 
-  this.setState(prevState => {
-    return {
-      count: prevState.count - 1,
-    }
-  })
+  makeIncrementer = amount => () => 
+    this.setState(prevState => ({
+        count: prevState.count + amount,
+    }))
+    
+  increment = this.makeIncrementer(1)
+  decrement = this.makeIncrementer(-1)
 
 
   render() {
